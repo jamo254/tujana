@@ -9,7 +9,7 @@ import { FaGithub } from "react-icons/fa";
 import { useRouter } from "next/router";
 
 const Auth = () => {
-  // const router = useRouter();
+  //const router = useRouter();
 
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -29,11 +29,11 @@ const Auth = () => {
       await signIn("credentials", {
         email,
         password,
-        // redirect: false,
+        //redirect: false,
         callbackUrl: "/profiles",
       });
       
-      //  router.push("/");
+      //router.push("/auth");
     } catch (error) {
       console.log(error);
     }
